@@ -1,4 +1,5 @@
-﻿using MeetingApp.Pages;
+﻿using MeetingApp.Classes;
+using MeetingApp.Pages;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,7 @@ namespace MeetingApp
         public Splash()
         {
             InitializeComponent();
+            Alpha.CurrentDate = DateTime.Now;
         }
 
         private void Gif_Click(object sender, EventArgs e)
@@ -33,6 +35,5 @@ namespace MeetingApp
         {
             this.Close();
         }
-
     }
 }
